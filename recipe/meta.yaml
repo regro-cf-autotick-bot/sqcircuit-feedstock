@@ -1,17 +1,17 @@
 {% set name = "SQcircuit" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 9627fb5bdce35018559beb5153ba6c17d6e4529c6a4152b1c07665e1e072d21f
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: df38e6e1823fad97532022e27884296912c941971acf4eb39ae00fec5621eaa7
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -31,13 +31,13 @@ test:
     - SQcircuit
 
 about:
-  home: "https://github.com/stanfordLINQS/SQcircuit"
+  home: https://github.com/stanfordLINQS/SQcircuit
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: "superconducting quantum circuit analyzer"
-  doc_url: "https://github.com/stanfordLINQS/SQcircuit"
-  dev_url: "https://github.com/stanfordLINQS/SQcircuit"
+  summary: superconducting quantum circuit analyzer
+  doc_url: https://github.com/stanfordLINQS/SQcircuit
+  dev_url: https://github.com/stanfordLINQS/SQcircuit
 
 extra:
   recipe-maintainers:
