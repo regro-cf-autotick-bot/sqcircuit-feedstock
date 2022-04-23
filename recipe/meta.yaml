@@ -10,7 +10,7 @@ source:
   sha256: df38e6e1823fad97532022e27884296912c941971acf4eb39ae00fec5621eaa7
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -31,12 +31,12 @@ test:
     - SQcircuit
 
 about:
-  home: https://github.com/stanfordLINQS/SQcircuit
+  home: https://sqcircuit.org/
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: superconducting quantum circuit analyzer
-  doc_url: https://github.com/stanfordLINQS/SQcircuit
+  doc_url: https://docs.sqcircuit.org/
   dev_url: https://github.com/stanfordLINQS/SQcircuit
 
 extra:
