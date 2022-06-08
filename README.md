@@ -1,7 +1,7 @@
 About sqcircuit
 ===============
 
-Home: https://github.com/stanfordLINQS/SQcircuit
+Home: https://sqcircuit.org/
 
 Package license: BSD-3-Clause
 
@@ -11,7 +11,7 @@ Summary: superconducting quantum circuit analyzer
 
 Development: https://github.com/stanfordLINQS/SQcircuit
 
-Documentation: https://github.com/stanfordLINQS/SQcircuit
+Documentation: https://docs.sqcircuit.org/
 
 Current build status
 ====================
