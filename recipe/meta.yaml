@@ -1,5 +1,5 @@
 {% set name = "SQcircuit" %}
-{% set version = "0.0.9" %}
+{% set version = "0.0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bddd22ee55d36c537d5745128d4b639b55e1d38ad4447c6b1847fc8a5740202e
+  sha256: 9636bdf4fcc7b555f641ec4c7a3ac88ca315dc077f3cd196280e93a676b2567d
 
 build:
   number: 0
