@@ -29,7 +29,7 @@ requirements:
     - IPython >=7.0.0
     - torch >=2.0
     - mpmath >=1.2.1
-    - sympy>=1.13.0
+    - sympy >=1.13.0
 
 test:
   imports:
