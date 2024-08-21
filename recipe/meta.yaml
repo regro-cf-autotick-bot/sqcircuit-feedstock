@@ -1,5 +1,6 @@
 {% set name = "SQcircuit" %}
-{% set version = "0.0.17" %}
+{% set version = "1.0.0" %}
+
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7344bee47405f06a1490caa5894756e3753d8a4ea3d81305e83fd7f9826dd182
+  sha256: dbfe1728fbd32553a9d4627f4c29e843df4cd83d3db452e0a42a93919da42392
 
 build:
   number: 0
@@ -23,9 +24,12 @@ requirements:
     - matplotlib-base >=3.0.0
     - numpy >=1.14.2
     - python >=3.6
-    - qutip >=4.3.1
+    - qutip >=5.0.0
     - scipy >=1.1.0
     - IPython >=7.0.0
+    - torch >=2.0
+    - mpmath >=1.2.1
+    - sympy >=1.13.0
 
 test:
   imports:
