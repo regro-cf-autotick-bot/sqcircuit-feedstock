@@ -7,23 +7,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: dbfe1728fbd32553a9d4627f4c29e843df4cd83d3db452e0a42a93919da42392
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - dill >=0.3.4
     - matplotlib-base >=3.0.0
     - numpy >=1.14.2
-    - python >=3.6
+    - python >={{ python_min }}
     - qutip >=5.0.0
     - scipy >=1.1.0
     - IPython >=7.0.0
@@ -32,6 +32,8 @@ requirements:
     - sympy >=1.13.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - SQcircuit
 
